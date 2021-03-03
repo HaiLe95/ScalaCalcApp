@@ -1,0 +1,21 @@
+# Stolen from my coworkers
+*.xml
+*.iml
+/.idea
+/.idea_modules
+**/.bsp/*
+**/target/*
+/bin
+
+*.sw[po]
+.cache
+.project
+.classpath
+.settings
+.DS_Store
+.metals
+.bloop
+project/metals.sbt
+
+# Project exclude paths
+/out/
