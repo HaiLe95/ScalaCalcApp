@@ -8,10 +8,8 @@ class Calculator {
 
   def multiply (a: Double, b: Double) : Double = { a * b }
 
-  def divide (a: Double, b: Double) : Double = {
-    // Check if b is zero
-    require(b != 0, "you can't divide to zero")
-    a / b
+  def divide (a: Double, b: Double) : Option[Double] = {
+    if(b == 0) None else Some(a / b)
   }
 
 }
