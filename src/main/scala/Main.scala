@@ -6,8 +6,9 @@ object Main {
 
   def main(args: Array[String]): Unit = {
 
+    // Creating Calc App that will do math for us
     val calc = new Calculator
-
+    // Java Input class that reads strings from console
     val scan = new Scanner(System.in)
 
     println("Please choose an action: plus, minus, divide or multiply")
@@ -21,8 +22,7 @@ object Main {
     println("Please enter next number down below: ")
     val yArgument = scan.nextDouble
     println("y = " + yArgument)
-
-
+    // Just printing expression and value
     action match {
       case "plus"     => println(xArgument + " + " + yArgument + " = " + calc.plus(xArgument, yArgument))
       case "minus"    => println(xArgument + " + " + yArgument + " = " + calc.minus(xArgument, yArgument))
