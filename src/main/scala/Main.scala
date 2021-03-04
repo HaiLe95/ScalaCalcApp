@@ -27,7 +27,7 @@ object Main {
       case "plus"     => println(xArgument + " + " + yArgument + " = " + calc.plus(xArgument, yArgument))
       case "minus"    => println(xArgument + " + " + yArgument + " = " + calc.minus(xArgument, yArgument))
       case "multiply" => println(xArgument + " * " + yArgument + " = " + calc.multiply(xArgument, yArgument))
-      case "divide"   => println(xArgument + " / " + yArgument + " = " + calc.divide(xArgument, yArgument).get)
+      case "divide"   => println(xArgument + " / " + yArgument + " = " + calc.divide(xArgument, yArgument).getOrElse(None))
       case _          => println("Error: you didn't choose the right action")
     }
 
